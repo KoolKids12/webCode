@@ -18,7 +18,7 @@ try {
         $_SESSION['password'] = $password;
 
         echo "Login successful! Redirecting...";
-        header("Location: viewData.php");  // Redirect to the data viewing page
+        header("Location: /TeamFit-main/Coach/home.html");  // Redirect to the data viewing page
         exit;
     }
 } catch (PDOException $e) {

@@ -35,5 +35,9 @@ try {
     echo "Successfully logged in!";
 } catch (PDOException $e) {
     echo "Database error: " . $e->getMessage();
+
+    sleep(4);
+
+    Header("Location: /TeamFit-main/login.html:);
 }
 ?>

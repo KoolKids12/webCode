@@ -15,11 +15,11 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Example query to fetch data
+    /*
     $sql = "SELECT * FROM some_table";  // Replace with your actual table
     $stmt = $pdo->query($sql);
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+    
     echo "<h1>Data from the database</h1>";
     echo "<table border='1'>";
     foreach ($results as $row) {
@@ -30,6 +30,7 @@ try {
         echo "</tr>";
     }
     echo "</table>";
+    */
 } catch (PDOException $e) {
     echo "Database error: " . $e->getMessage();
 }

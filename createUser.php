@@ -1,4 +1,6 @@
 <?php
+session_start();  // Start the session to store user information
+
 // Database connection details
 $host = "65.24.35.108:3306";
 $dbname = "schoolTeams";  // This is your current database
@@ -20,18 +22,23 @@ try {
         $createStmt = $pdo->prepare($createUserSQL);
         $createStmt->bindParam(':username', $newUser);
         $createStmt->bindParam(':password', $newPassword);
-
-        // Execute the CREATE USER command
         $createStmt->execute();
+
         // SQL to grant privileges to the new user
         $grantPrivilegesSQL = "GRANT ALL PRIVILEGES ON $dbname.* TO :username@'%'";  // Adjust privileges as needed
         $grantStmt = $pdo->prepare($grantPrivilegesSQL);
         $grantStmt->bindParam(':username', $newUser);
         $grantStmt->execute();
 
-        echo "MySQL user account '$newUser' created successfully!";
+        // Store new user credentials in the session
+        $_SESSION['username'] = $newUser;
+        $_SESSION['password'] = $newPassword;
 
+        echo "MySQL user account '$newUser' created successfully! Redirecting...";
+
+        // Redirect to another page after creating the account
         header("Location: /TeamFit-main/Coach/home.html");
+        exit;
     }
 } catch (PDOException $e) {
     echo "Database error: " . $e->getMessage();

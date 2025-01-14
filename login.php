@@ -1,5 +1,6 @@
 <?php
-// Database connection details
+session_start();  // Start the session to store user information
+
 $host = "65.24.35.108:3306";
 $dbname = "schoolTeams";
 
@@ -12,8 +13,12 @@ try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        echo "Login successful! You are connected to the database as '$username'.";
-        header("Location: /TeamFit-main/Coach/home.html");
+        // Store connection details in the session
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
+
+        echo "Login successful! Redirecting...";
+        header("Location: viewData.php");  // Redirect to the data viewing page
         exit;
     }
 } catch (PDOException $e) {

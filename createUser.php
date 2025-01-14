@@ -25,7 +25,7 @@ try {
         $createStmt->execute();
 
         // SQL to grant privileges to the new user
-        $grantPrivilegesSQL = "GRANT ALL PRIVILEGES ON $dbname.* TO :username@'%'";  // Adjust privileges as needed
+        $grantPrivilegesSQL = "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON $dbname.* TO :username@'%'";  // Adjust privileges as needed
         $grantStmt = $pdo->prepare($grantPrivilegesSQL);
         $grantStmt->bindParam(':username', $newUser);
         $grantStmt->execute();

@@ -26,6 +26,6 @@ try {
 
     sleep(4);
 
-    Header("Location: /Teamfit-main/login.html");
+    Header("Location: /TeamFit-main/login.html");
 }
 ?>

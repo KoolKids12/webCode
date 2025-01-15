@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFit - Personal Progress</title> 
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to the CSS file -->
+    <link href="../../layout.css" rel="stylesheet" >
+    <link href="../../progressStyles.css" rel="stylesheet" >
+    <script src="../../functions.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <center>
+            <h1> Personal Progress </h1>
+        </center>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="sidebar">
+             <nav id="navMenu">
+                <ul>
+                    <li><a href="../../Athlete/home.html">Home</a></li>
+                    <li><a href="../../Athlete/History/history.html">History</a></li>
+                    <li><a href="../../Athlete/Progress/progress.html">Progress</a></li>
+                    <li><a href="../../Athlete/Team/team.html">Team</a></li>
+                    <li><a href="../../Athlete/settings.html">Settings</a></li>
+                    <li><a href="../../login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+
+<body class="personal-progress-body">
+    <div class="personal-progress-container">
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Log Your Running Workout</h2>
+            <form>
+                <div class="personal-progress-input-group">
+                    <label for="running-activity">Activity</label>
+                    <input type="text" id="running-activity" name="running-activity" placeholder="e.g., 40 meter dash, 1200 meter run">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="time">Time (minutes)</label>
+                    <input type="number" id="time" name="time" min="0">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="laps">Laps</label>
+                    <input type="number" id="laps" name="laps" min="0">
+                </div>
+                <button type="submit">Submit Running Workout</button>
+            </form>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Log Your Lifting Workout</h2>
+            <form>
+                <div class="personal-progress-input-group">
+                    <label for="lifting-activity">Activity</label>
+                    <input type="text" id="lifting-activity" name="lifting-activity" placeholder="e.g., Squats, Bench Press">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="weight">Weight (lbs)</label>
+                    <input type="number" id="weight" name="weight" min="0">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="reps">Reps</label>
+                    <input type="number" id="reps" name="reps" min="0">
+                </div>
+                <button type="submit">Submit Lifting Workout</button>
+            </form>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Coach's Assigned Workouts</h2>
+            <form>
+                <div class="personal-progress-input-group">
+                    <label for="assigned-workout">Workout</label>
+                    <input type="text" id="assigned-workout" name="assigned-workout" placeholder="e.g., 3-mile run, 10 push-ups">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="workout-info">Your Info</label>
+                    <input type="text" id="workout-info" name="workout-info" placeholder="e.g., Completed in 25 minutes">
+                </div>
+                <div class="personal-progress-input-group">
+                    <label for="workout-complete">Mark Complete</label>
+                    <input type="checkbox" id="workout-complete" name="workout-complete">
+                </div>
+                <button type="submit">Update Workout Progress</button>
+            </form>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Your Daily Stats</h2>
+            <div class="personal-progress-chart" id="daily-chart">
+                <!-- Placeholder for daily progress pie chart -->
+                <p>Daily Progress Chart</p>
+            </div>
+            <h3>Today's Workouts</h3>
+            <ul>
+                <li>Running: <strong>2 miles</strong></li>
+                <li>Lifting: <strong>Bench Press - 100 lbs, 10 reps</strong></li>
+            </ul>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Your Weekly Stats</h2>
+            <div class="personal-progress-chart" id="weekly-chart">
+                <!-- Placeholder for weekly progress pie chart -->
+                <p>Weekly Progress Chart</p>
+            </div>
+            <h3>Weekly Totals</h3>
+            <ul>
+                <li>Running: <strong>10 miles</strong></li>
+                <li>Lifting: <strong>Total Weight Lifted - 5000 lbs</strong></li>
+            </ul>
+        </section>
+        <section class="personal-progress-section">
+            <h2 class="personal-progress-section-title">Badges Earned</h2>
+            <span class="personal-progress-badge">5K Run Complete</span>
+            <span class="personal-progress-badge">100 Push-Ups Done</span>
+        </section>
+    </div>
+  
+        </div>
+        <div class="sidebar"></div>
+     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> TeamFit. </p>
+    </footer>
+</body>
+</html>

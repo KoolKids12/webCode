@@ -1,0 +1,56 @@
+        body.personal-progress-body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .personal-progress-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        section.personal-progress-section {
+            margin: 2em 0;
+            background: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .personal-progress-section-title {
+            margin-bottom: 1em;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .personal-progress-input-group {
+            margin-bottom: 1em;
+        }
+        .personal-progress-input-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .personal-progress-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 1em;
+        }
+        .personal-progress-badge {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 0.5em 1em;
+            margin-right: 0.5em;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        personal_team-button {
+                    width: 35%;
+                    padding: 10px;
+                    background-color: #007BFF;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+        }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamFit - Personal History</title> 
+    <link rel="stylesheet" href="../../styles.css"> <!-- Link to the CSS file -->
+    <link href="../../layout.css" rel="stylesheet" >
+    <script src="../../functions.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <center>
+            <h1> Personal History </h1>
+        </center>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="sidebar">
+             <nav id="navMenu">
+                <ul>
+                    <li><a href="../../Athlete/home.html">Home</a></li>
+                    <li><a href="../../Athlete/History/history.html">History</a></li>
+                    <li><a href="../../Athlete/Progress/progress.html">Progress</a></li>
+                    <li><a href="../../Athlete/Team/team.html">Team</a></li>
+                    <li><a href="../../Athlete/settings.html">Settings</a></li>
+                    <li><a href="../../login.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            
+          <body class="personal-history-body">
+            <div class="personal-history-container">
+                <section class="personal-history-section">
+                    <h2 class="personal-history-section-title">Past Workouts</h2>
+                    <table class="personal-history-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Activity</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-12-16</td>
+                                <td>Running</td>
+                                <td>3 miles in 25 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-15</td>
+                                <td>Bench Press</td>
+                                <td>150 lbs, 10 reps</td>
+                            </tr>
+                            <tr>
+                                <td>2024-12-14</td>
+                                <td>Squats</td>
+                                <td>200 lbs, 12 reps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="personal-history-section">
+                    <h2 class="personal-history-section-title">Personal Bests</h2>
+                    <ul class="personal-history-bests">
+                        <li>Fastest 1 Mile: <strong>6 minutes</strong></li>
+                        <li>Heaviest Bench Press: <strong>200 lbs</strong></li>
+                        <li>Most Reps Squats: <strong>15 reps at 150 lbs</strong></li>
+                    </ul>
+                </section>
+                <section class="personal-history-section">
+                    <h2 class="personal-history-section-title">Total Workout Summary</h2>
+                    <ul class="personal-history-summary">
+                        <li>Total Miles Run: <strong>50 miles</strong></li>
+                        <li>Total Weight Lifted: <strong>10,000 lbs</strong></li>
+                        <li>Total Workouts Completed: <strong>25</strong></li>
+                    </ul>
+                </section>
+            </div>
+          
+        </div>
+        <div class="sidebar"></div>
+     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> TeamFit. </p>
+    </footer>
+</body>
+</html>

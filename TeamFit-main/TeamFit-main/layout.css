@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Sticky Header */
+header {
+    background-color: #00BFFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#centered-title {
+    margin: 0; /* Removes any default margins */
+    text-align: center;
+}
+/* Sticky Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+HTML, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take up the full height */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; /* Set container height to viewport height */
+}
+
+.sidebar {
+    background-color: #00008B;
+    width: 10%; /* Allow it to fill the container height */
+    height: auto
+    
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}

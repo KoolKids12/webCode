@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login to TeamFit </title> 
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link href="layout.css" rel="stylesheet" >
+    <script src="functions.js"></script>
+    <style>
+    body {
+      background-image: url("Photos/Fit.png");
+      background-size: cover; /* Ensures the image covers the entire background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position: center; /* Centers the image */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <div style="text-align: center;">
+        <h1>Log in to TeamFit</h1>
+    </div>
+   </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="sidebar"></div>
+        <div class="content">
+
+
+            
+<div class = "box-container">
+                <div class="box">
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>            
+               
+                <div class="box">
+    <h1>Create Account</h1>
+    <form action="createUser.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Create Account</button>
+    </form>
+</div>
+
+            </div>
+
+
+
+        </div>
+        <div class="sidebar"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> TeamFit. </p>
+    </footer>
+</body>
+</html>
